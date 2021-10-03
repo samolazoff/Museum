@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-transform: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+.color_dark {
+  color: #030303;
+}
+
+.color_red {
+  color: #710707;
+}
+
+.color_white {
+  color: #ffffff;
+}
+
+.title-box {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-family: "Forum", cursive;
+  font-size: 80px;
+  line-height: 88px;
+}
+
+.title-box:after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px;
+  width: 100%;
+}
+
+.title-box:hover {
+  color: #9d8665;
+}
+
+.btn_big {
+  width: 360px;
+  height: 75px;
+  background-color: #710707;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  transition: 0.75s linear;
+}
+
+.btn_big:hover {
+  background-color: #9d8665;
+}
+
+.btn_less {
+  width: 175px;
+  height: 50px;
+  background-color: #030303;
+  border-radius: 2px;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  transition: 0.75s linear;
+}
+
+.btn_less:hover {
+  background-color: #9d8665;
+  color: #030303;
+}

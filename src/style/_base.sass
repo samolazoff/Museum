@@ -1,0 +1,63 @@
+// variables fonts
+
+$forum: 'Forum', cursive
+$roboto: 'Roboto', sans-serif
+
+// variables color
+
+$dark:#030303
+$red:#710707
+$gold: #9d8665
+$white: #ffffff
+$color_active:#7E6C51
+
+    
+// Typography
+
+@mixin text($font, $size, $line-h)
+    font-style: normal
+    font-weight: normal
+    letter-spacing: 0.05em
+    font-family:$font
+    font-size: $size
+    line-height: $line-h
+.color_dark
+    color: $dark
+.color_red
+    color: $red
+.color_white
+    color: $white
+.title-box
+    @include text($font: $forum, $size: 80px, $line-h: 88px)
+.title-box:after
+    content:''
+    display: block
+    border-bottom: solid 2px 
+    width: 100%
+.title-box:hover
+    color: $gold
+
+// BUTTONS
+.btn_big
+    width: 360px
+    height: 75px
+    background-color: $red
+    border-radius: 10px
+    text-align: center
+    color: $white
+    @include text($font: $roboto, $size: 24px, $line-h: 28px)
+    transition: .75s linear
+.btn_big:hover
+    background-color: $gold
+.btn_less
+    width: 175px
+    height: 50px
+    background-color: $dark
+    border-radius: 2px
+    text-align: center
+    color: $white
+    @include text($font: $roboto, $size: 22px, $line-h: 26px)
+    transition: .75s linear
+.btn_less:hover
+    background-color: $gold
+    color: $dark

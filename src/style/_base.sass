@@ -10,17 +10,17 @@ $red:#710707
 $gold: #9d8665
 $white: #ffffff
 $color_active:#7E6C51
-
     
-// Typography
-
 @mixin text($font, $size, $line-h)
     font-style: normal
     font-weight: normal
     letter-spacing: 0.05em
-    font-family:$font
+    font-family: $font
     font-size: $size
     line-height: $line-h
+
+// Typography
+
 .color_dark
     color: $dark
 .color_red
@@ -61,3 +61,22 @@ $color_active:#7E6C51
 .btn_less:hover
     background-color: $gold
     color: $dark
+.container
+    max-width: 420px
+    margin: 0 auto
+    padding: 0 20px
+.flex-c
+    display: flex
+    flex-direction: column
+.flex-r
+    display: flex
+    flex-direction: row
+.logo
+    @include text($font: $forum, $size: 16px, $line-h: 18px)
+    letter-spacing: 5px
+    text-transform: uppercase
+    a
+        justify-content: center
+        align-items: flex-end
+        .logo__img
+            margin-right: 25px

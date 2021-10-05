@@ -97,3 +97,48 @@ button {
   background-color: #9d8665;
   color: #030303;
 }
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-family: "Forum", cursive;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.logo a {
+  justify-content: center;
+  align-items: flex-end;
+}
+.logo a .logo__img {
+  margin-right: 25px;
+}
+
+.page-header {
+  width: 100%;
+  height: 90px;
+  background-color: #030303;
+}
+.page-header .container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
